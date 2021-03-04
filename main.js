@@ -4,41 +4,56 @@
 
 
 
-function yell(string) {
-  return string + "!";
+function yell(str) {
+  return str + '!';
 }
 
-function getFirstCharacter(string) {
-  return string[0];
+//function yell2(str)  {
+//  const answer = str + '!';
+
+//  return answer;
+//}
+
+
+const result1 = yell('Hello')
+console.log(result1); 
+
+
+const result2 = yell('Hi');
+result2; 
+
+function getFirstCharacter(str) {
+  return str[0]
 }
 
-function getLastCharacter(string) {
-  return string[string.length - 1];
+function getLastCharacter(str) {
+  return str[str.length - 1];
 }
 
-function getOneCharacter(string, number) {
-  return string[number];
+function getOneCharacter(str, i) {
+  return str[i];
 }
 
-function getTwoCharacters(string, number1, number2) {
-  return string[number1] + string[number2];
+function getTwoCharacters(str, i1, i2) {
+  return str[i1] + str[i2];
 }
 
-function makeCapitalized(string) {
-  return string.toUpperCase();
+function makeCapitalized(str) {
+  return str.toUpperCase();
 }
 
-function yellLouder(string) {
-  return string.toUpperCase() + "!!!";
+function yellLouder(str) {
+  return str.toUpperCase() + '!!!';
 }
 
-function getInitials(string) {
-  const i1 = string[0];
-  const spaceIndex = string.indexOf(" ");
-  const i2 = string[spaceIndex + 1];
-  return i1 + "." + i2 + ".";
 
-  // return string[0] + "." + string[string.indexOf(" ") + 1] + ".";
+function getInitials(str) {
+  const initials1 = str[0];
+  const spaceIndex = str.indexOf(' ');
+  const initials2 = str[spaceIndex + 1];
+
+  return initials1 + '.' + initials2 + '.';
+
 }
 
 /********************************************************************
